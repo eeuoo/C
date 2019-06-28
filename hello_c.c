@@ -19,4 +19,16 @@ result = a + b;   // 덧셈연산자를 이용한 변수 연산
 
 printf('a + b = : %d\n', result);
 
+// addNumber() 함수의 호출
+result = addNumber(a, b);
+printf(" addNumber(a, b) : %d\n", result);
+return 0;
+}
+
+int addNumber(int a, int b)
+{
+// addNumber() 함수의 몸체
+int ret;
+ret = a + b;
+return ret;
 }
