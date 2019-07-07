@@ -20,5 +20,16 @@ int main()
     else
         num = data2;
 
-    
+    for(i = 1; i <= num; i++){     // 1부터 num까지 반복 수행
+
+    /* data1을 변수 i로 나눈 값이 0이고, data2를 변수 i로 나눈 값도 0인 경우 공통 약수로 출력 */
+        if ( ((data1 % i) == 0) && ((data2 % i) == 0))
+            printf("%4d", i);
+
+    /* 변수 i가 data1이나 data2와 같아지면 반복문의 수행을 중단함 */
+        if ( (i == data1) || (i == data2))
+            break;
+    }
+
+    return 0;
 }
