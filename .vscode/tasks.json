@@ -12,42 +12,40 @@
 // }
 
 {
-    "version": "2.0.0",
+    "version" : "2.0.0",
     "tasks": [
         {
-            "label": "Build hello world",
+            "label": "build_gcc",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-o",
+                "${fileDirname}/$(fileBasenameNoExtension}.out",
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "build_g++",
             "type": "shell",
             "command": "g++",
             "args": [
                 "-g",
-                "helloworld.cpp"
+                "-o",
+                "${fileDirname}/$(fileBasenameNoExtension}.out",
+                "${file}"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             }
-        },
-        {
-            "label": "Run hello world",
-            "type": "shell",
-            "command": "./a.out"
-        },
-        {
-            "type": "shell",
-            "label": "gcc build active file",
-            "command": "/usr/bin/gcc",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "options": {
-                "cwd": "/usr/bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ]
         }
     ]
 }
