@@ -14,5 +14,14 @@ int main()
     printf("y의 값은 : %d\n", y);
     printf("x + y * 2 - ++x * (y++ / 3)의 결과는 : %d\n", z);
 
+    x = 1;
+    y = 0;
+
+    x = x << 1 || y;
+    y += ++y;
+
+    printf("x의 값은 : %d\n", x);
+    printf("y의 값은 : %d\n", y);
+
     return 0;
 }
