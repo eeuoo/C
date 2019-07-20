@@ -18,8 +18,8 @@ int main()
     {
         value_new = value1 + value2;   // 이전의 두 값을 덧셈하여 새로운 값을 생성
         printf("%4d", value_new);
-        value2 = value1;
-        value1 = value_new;
+        value2 = value1;               // 이전의 첫 번째 값을 두 번째 값에 대입
+        value1 = value_new;            // 새로 구한 값을 첫 번째 값에 대입
         i++;
     }
 
