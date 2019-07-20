@@ -10,7 +10,7 @@ int main()
 
      i = 1;
      total = 0;
-     while (i <= num);
+     while (i <= num)
      {
          total += i++;
      }
