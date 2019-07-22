@@ -6,7 +6,8 @@ int main()
 
     printf("학점 산출 프러그램입니다. 국어 점수를 입력하세요.\n");
     printf("국어 점수 : ");
-    scanf("\n");
+    scanf("%d", &score);
+    printf("\n");
 
     if (score > 90){
         printf("A학점입니다.\n");
