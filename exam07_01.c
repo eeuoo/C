@@ -21,7 +21,7 @@ int main()
 int f(int x)
 {
     int ret;
-    printf("%원을 넣으셨군요.\n");
+    printf("%d원을 넣으셨군요.\n", x);
 
     if (x == 100)
         ret = 1;
