@@ -16,3 +16,23 @@ int main()
 
     return 0;
 }
+
+// 함수 f(x)의 본문
+int f(int x)
+{
+    int ret;
+    printf("%원을 넣으셨군요.\n");
+
+    if (x == 100)
+        ret = 1;
+    else if (x == 200)
+        ret = 2;
+    else if (x == 300)
+        ret = 3;
+    else {
+        printf("이 자판기는 300원까지밖에 처리 못 해요\n");
+        ret = 0;
+    }
+
+    return ret;
+}
