@@ -34,7 +34,7 @@ int Square(int x)
     return ret;
 }
 
-int TripleSquare(int x);
+int TripleSquare(int x)
 {
     int ret;
 
