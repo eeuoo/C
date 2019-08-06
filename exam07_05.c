@@ -24,7 +24,7 @@ int main()
 
 void IncreaseAge(int num) 
 {
-    static int age = 25;  // IncreaseAge() 함수 내에서 정적 변수 age의 초기화
+    //static int age = 25;  // IncreaseAge() 함수 내에서 정적 변수 age의 초기화
 
     age = age + num;
 
