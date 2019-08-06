@@ -2,7 +2,7 @@
 
 void Display_gugudan(void);
 
-int num //  전역 변수 num의 선언
+int num; //  전역 변수 num의 선언
 
 int flag; // 전역 변수 flag의 선언
 
@@ -22,7 +22,7 @@ int main()
         }
         else
         {
-            printf("2부터 9까지만 가능합니다. 다시 입력해주세요.\n", num);
+            printf("2부터 9까지만 가능합니다. 다시 입력해주세요.\n");
         }
                 
     }
