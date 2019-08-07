@@ -21,7 +21,7 @@ int main()
         {
             flag = 1;
             printf("%d단을 선택하셨군요.\n\n", num);
-            Dispaly_gugudan();
+            Dispaly_gugudan();  // 외부 함수 Display_gugudan()를 호출
         }
         else 
             printf("2부터 9까지만 가능합니다. 다시 입력해주세요. \n");
