@@ -15,7 +15,7 @@ int main()
     while (!flag)
     {
         printf("몇 단을 출력할까요? -> ");
-        scanf("%d", flag);
+        scanf("%d", &num);
 
         if(num > 1 && num < 10)
         {
