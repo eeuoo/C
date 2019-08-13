@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main(void)
+int main(void)
 {
     int data = 10;
     int *ptr;
@@ -9,5 +9,5 @@ void main(void)
 
     ptr = &data;
 
-    printf("ptr의 주소 : 0x%p, ptr의 값       : %x \n", &ptr, ptr);
+    printf("ptr의 주소 : 0x%p, ptr의 값       : %p \n", &ptr, ptr);
 }
