@@ -7,7 +7,7 @@ int main()
     char *ptr = buf;  // 포인터 변수 ptr이 배열 buf를 가리키도록 함
 
     int i = 0;
-    printf("ptr을 1씩 증가시캬 봅시다\n");
+    printf("ptr을 1씩 증가시켜 봅시다\n");
 
     // for문과 포인터 변수 ptr을 이용하여 배열 buf의 데이터들을 출력
     for(i = 0; i < 6; i++) {
@@ -19,20 +19,20 @@ int main()
     ptr = buf;  // 배열 buf의 처음 주소를 포인턴 ptr이 가리키도록 함
 
     printf("*ptr의 결과\n");
-    *ptr++;
+    //*ptr++;
     printf("ptr : %p , *ptr : %c\n", ptr, *ptr);
 
-    printf("*(ptr++)의 결과\n")
-    *(ptr++);
+    printf("*(ptr++)의 결과\n");
+    //*(ptr++);
     printf("ptr : %p , *ptr : %c\n", ptr, *ptr);
 
     printf("--ptr을 하고 *(ptr++)의 결과\n");
     --ptr;
-    *(ptr++);
+    //*(ptr++);
     printf("ptr : %p , *ptr : %c\n", ptr, *ptr);
 
     printf("(*ptr)++의 결과\n");
-    (*ptr)++;
+    //(*ptr)++;
     printf("ptr : %p , *ptr : %c\n", ptr, *ptr);
 
     printf("ptr += 1을 하고 *ptr의 결과\n");
