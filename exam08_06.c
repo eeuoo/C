@@ -17,22 +17,23 @@ int main()
 
     printf("\n다시 ptr이 buf를 가리키게 합시다\n");
     ptr = buf;  // 배열 buf의 처음 주소를 포인턴 ptr이 가리키도록 함
+    printf("ptr : %p , *ptr : %c\n", ptr, *ptr);
 
     printf("*ptr의 결과\n");
-    //*ptr++;
+    ptr++;
     printf("ptr : %p , *ptr : %c\n", ptr, *ptr);
 
     printf("*(ptr++)의 결과\n");
-    //*(ptr++);
+    (ptr++);
     printf("ptr : %p , *ptr : %c\n", ptr, *ptr);
 
     printf("--ptr을 하고 *(ptr++)의 결과\n");
     --ptr;
-    //*(ptr++);
+    (ptr++);
     printf("ptr : %p , *ptr : %c\n", ptr, *ptr);
 
     printf("(*ptr)++의 결과\n");
-    //(*ptr)++;
+    (ptr)++;
     printf("ptr : %p , *ptr : %c\n", ptr, *ptr);
 
     printf("ptr += 1을 하고 *ptr의 결과\n");
