@@ -19,7 +19,7 @@ int main()
     ptr = buf;  // 배열 buf의 처음 주소를 포인턴 ptr이 가리키도록 함
     printf("ptr : %p , *ptr : %c\n", ptr, *ptr);
 
-    printf("*ptr의 결과\n");
+    printf("*ptr++의 결과\n");
     ptr++;
     printf("ptr : %p , *ptr : %c\n", ptr, *ptr);
 
