@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-vodi Square(int, int *);  // 제곱근과 세제곱근을 구하는 함수
+void Square(int, int *);  // 제곱근과 세제곱근을 구하는 함수
 
 int main()
 {
     int num, Level;
 
-    printf("C프로그래밍에서의 포인터 사용 예제 - 두 번째\n");
+    printf("C프로그래밍에서의 포인터 사용 예제 - 두 번째(포인터 사용)\n");
 
     Level = 2;
     num = 3;
