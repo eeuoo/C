@@ -24,7 +24,7 @@ int main()
 
     // 포인터 배열 buf를 2차원 배열 buf처럼 사용하여 경사진 문자열 저장
     for(i = 0; i < size; i++) 
-        for(i = size - 1; j < size; j++)
+        for(j = size - 1; j < size; j++)
             buf[i][j] = k++;
 
     // 포인터 배열 buf의 값을 출력
