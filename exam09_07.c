@@ -6,7 +6,7 @@
 
 int main()
 {
-    char *buf[MAX]  // 문자형 포인터 배열 buf의 선언
+    char *buf[MAX];  // 문자형 포인터 배열 buf의 선언
 
     int i, j, k = 1;
     int size;
