@@ -5,7 +5,7 @@
 int Stack[MAX];
 int Top;
 
-void InitalStack(void)
+int InitialStack(void) 
 {
     printf("스택을 초기화합니다.\n");
     Top = -1;
@@ -43,7 +43,7 @@ void Print_Stack(void)
     }
 }
 
-void main(void)
+int main(void)
 {
     int i;
     InitialStack();
