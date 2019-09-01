@@ -9,6 +9,8 @@ int InitialStack(void)
 {
     printf("스택을 초기화합니다.\n");
     Top = -1;
+
+    return 0;
 }
 
 int Push(int t)
