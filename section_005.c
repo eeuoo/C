@@ -45,14 +45,25 @@ int main()
     // scanf("%f", &aa);
     // scanf("%s", dd);
 
-    int i = 250;
-    float a = 125.23f;
-    float b = 314.1592e+5;
-    char c = 'A';
-    char dd[] = "Korea";
+    // int i = 250;
+    // float a = 125.23f;
+    // float b = 314.1592e+5;
+    // char c = 'A';
+    // char dd[] = "Korea";
 
-    printf("10진수i = %d\n 8진수i = %o\n", i, i);
-    printf("a = %8.2f, b = %e\n", a, b);
-    printf("c값은 문자로 %c이고 아스키 코드로 %d이다.\n", c, c);
-    printf("%-10s, %10s\n\r", dd, dd);
+    // printf("10진수i = %d\n 8진수i = %o\n", i, i);
+    // printf("a = %8.2f, b = %e\n", a, b);
+    // printf("c값은 문자로 %c이고 아스키 코드로 %d이다.\n", c, c);
+    // printf("%-10s, %10s\n\r", dd, dd); // 10자리를 확보해 출력
+
+    int a, b, c;
+    a = 5 % 3;
+    a--;
+    b = (a++) + 3;
+    
+    printf("%d, %d\n", a, b);
+
+    c = (++a) + 3;
+
+    printf("%d, %d, %d\n", a, b, c);
 }
