@@ -88,8 +88,12 @@ int main()
     // c %= 2;
     // printf("%d, %d, %d\n", a, b, c);
 
-    int a = 10, b = 20, c, d;
-    c = a > b ? a : b;
-    d = a > b ? a - b : b - a;
-    printf("%d, %d\n", c, d);
+    // int a = 10, b = 20, c, d;
+    // c = a > b ? a : b;
+    // d = a > b ? a - b : b - a;
+    // printf("%d, %d\n", c, d);
+
+    int a = 2, b = 3, c = 4, d;
+    d = a * b + c >= 8 && c / a - b != 0;
+    printf("%d\n", d);
 }
