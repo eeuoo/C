@@ -67,12 +67,18 @@ int main()
 
     // printf("%d, %d, %d\n", a, b, c);
 
-    int a = 5, b = 7, c, d, e, f;
-    c = a & b;
-    d = a | b;
-    e = a ^ b;
-    f = ~b;
-    a = a >> 1;
-    b = b << 3;
-    printf("%d, %d, %d, %d, %d, %d\n", a, b, c, d, e, f);
+    // int a = 5, b = 7, c, d, e, f;
+    // c = a & b;
+    // d = a | b;
+    // e = a ^ b;
+    // f = ~b;
+    // a = a >> 1;
+    // b = b << 3;
+    // printf("%d, %d, %d, %d, %d, %d\n", a, b, c, d, e, f);
+
+    int a = 2, b = 3, c, d, e;
+    c = a > 3 && b > 2;
+    d = a > 3 || b > 2;
+    e = !c;
+    printf("%d, %d, %d\n", c, d, e);
 }
