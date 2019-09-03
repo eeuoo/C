@@ -56,14 +56,23 @@ int main()
     // printf("c값은 문자로 %c이고 아스키 코드로 %d이다.\n", c, c);
     // printf("%-10s, %10s\n\r", dd, dd); // 10자리를 확보해 출력
 
-    int a, b, c;
-    a = 5 % 3;
-    a--;
-    b = (a++) + 3;
+    // int a, b, c;
+    // a = 5 % 3;
+    // a--;
+    // b = (a++) + 3;
     
-    printf("%d, %d\n", a, b);
+    // printf("%d, %d\n", a, b);
 
-    c = (++a) + 3;
+    // c = (++a) + 3;
 
-    printf("%d, %d, %d\n", a, b, c);
+    // printf("%d, %d, %d\n", a, b, c);
+
+    int a = 5, b = 7, c, d, e, f;
+    c = a & b;
+    d = a | b;
+    e = a ^ b;
+    f = ~b;
+    a = a >> 1;
+    b = b << 3;
+    printf("%d, %d, %d, %d, %d, %d\n", a, b, c, d, e, f);
 }
