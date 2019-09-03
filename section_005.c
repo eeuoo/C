@@ -82,9 +82,14 @@ int main()
     // e = !c;
     // printf("%d, %d, %d\n", c, d, e);
 
-    int a = 2, b = 3, c = 4;
-    a += 2;
-    b *= 2;
-    c %= 2;
-    printf("%d, %d, %d\n", a, b, c);
+    // int a = 2, b = 3, c = 4;
+    // a += 2;
+    // b *= 2;
+    // c %= 2;
+    // printf("%d, %d, %d\n", a, b, c);
+
+    int a = 10, b = 20, c, d;
+    c = a > b ? a : b;
+    d = a > b ? a - b : b - a;
+    printf("%d, %d\n", c, d);
 }
