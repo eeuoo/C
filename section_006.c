@@ -12,12 +12,19 @@ int main()
 
     // printf("%d, %d\n", even, odd);
 
-    int a = 15, b = 0;
+    // int a = 15, b = 0;
 
-    if (a >10)
-        b = a - 10;
+    // if (a >10)
+    //     b = a - 10;
 
-    b = b + (10 - b);
+    // b = b + (10 - b);
 
-    printf("%d\n",b);
+    // printf("%d\n",b);
+
+    int a = 10, b = 20, cha;
+    if (a > b)
+        cha = a - b;
+    else
+        cha = b - a;
+    printf("%d\n", cha);
 }
