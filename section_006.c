@@ -67,12 +67,31 @@ int main()
     //     hap += i;
     // printf("%d, %d\n", i, hap);
 
+    // int i = 0, hap = 0;
+    // while (i < 10)
+    // {
+    //     i++;
+    //     hap += i;
+    // }
+    // printf("%d, %d\n", i, hap);
+    
+    // int i = 0, hap = 0;
+    // do 
+    // {
+    //     i++;
+    //     hap += i;
+    // } while (i < 10);
+    // printf("%d, %d\n", i, hap);
+
     int i = 0, hap = 0;
-    while (i < 10)
+    while (1)
     {
         i++;
+        if (i > 10)
+            break;
+        if (i % 5 == 0)
+            continue;
         hap += i;
     }
     printf("%d, %d\n", i, hap);
-    
 }
