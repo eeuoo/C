@@ -16,12 +16,23 @@ int main()
     // for(i = 0; i < 5; i++)
     //     printf("%d", a[i]);
 
-    int a[5];
-    int i;
-    int *p;
-    for(i = 0; i < 5; i++)
-        a[i] = i + 10;
-    p = a;
-    for(i = 0; i < 5; i++)
-        printf("%d", *(p+i));
+    // int a[5];
+    // int i;
+    // int *p;
+    // for(i = 0; i < 5; i++)
+    //     a[i] = i + 10;
+    // p = a;
+    // for(i = 0; i < 5; i++)
+    //     printf("%d", *(p+i));
+
+    int a[3][4];
+    int i, j, k = 0;
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 4; j++)
+        {
+            k++;
+            a[i][j] = k;
+        }
+    }
 }
