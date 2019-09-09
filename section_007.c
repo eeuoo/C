@@ -9,6 +9,8 @@ struct sawon
 
 struct sawon data;
 
+void func(int i, int j);
+
 int main()
 {
     // int a = 20;
@@ -45,16 +47,30 @@ int main()
     //     }
     // }
 
-    printf("이름 : ");
-    scanf("%s", data.name);
-    printf("직위 : ");
-    scanf("%s", data.jikwi);
-    printf("급여 : ");
-    scanf("%d", &data.pay);
+    // printf("이름 : ");
+    // scanf("%s", data.name);
+    // printf("직위 : ");
+    // scanf("%s", data.jikwi);
+    // printf("급여 : ");
+    // scanf("%d", &data.pay);
     
-    printf("\n\n");
+    // printf("\n\n");
 
-    printf("이름 : %s\n", data.name);
-    printf("직위 : %s\n", data.jikwi);
-    printf("급여 : %d\n", data.pay);
+    // printf("이름 : %s\n", data.name);
+    // printf("직위 : %s\n", data.jikwi);
+    // printf("급여 : %d\n", data.pay);
+
+    int a = 3, b = 12;
+    func(a, b);
+    printf("%d, %d\n", a, b);
+
+}
+
+void func(i,j)
+
+int i, j;
+{
+    i *= 3;
+    j /= 3;
+    printf("%d, %d\n", i, j);
 }
