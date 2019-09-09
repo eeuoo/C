@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
 struct sawon
 {
@@ -77,11 +80,26 @@ int main()
 
     // printf("%d", factorial(5));
 
-    int i = 10, j = 5, result;
-    int (*pf)(int, int);
-    pf = add;
-    result = pf(i, j);
-    printf("%d", result);
+    // int i = 10, j = 5, result;
+    // int (*pf)(int, int);
+    // pf = add;
+    // result = pf(i, j);
+    // printf("%d", result);
+
+    printf("%f\n", pow(2, 3));
+    printf("%f\n", sqrt(25));
+    printf("%d\n", abs(-20));
+    char a[] = "ad";
+    char b[] = "ac";
+    printf("%d\n", strcmp(a, b));
+    strcpy(a, b);
+    printf("%d\n", strcmp(a, b));
+    char c[] = "123";
+    char d[] = "456";
+    printf("%f\n", atof(c) + atof(d));
+    char e[] = "12.3";
+    char f[] = "45.6";
+    printf("%f\n", atof(e) + atof(f));
 }
 
 // void func(i,j)
