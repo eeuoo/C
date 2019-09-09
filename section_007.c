@@ -10,7 +10,9 @@ struct sawon
 struct sawon data;
 
 // void func(int i, int j);
-int func(int i, int j);
+// int func(int i, int j);
+// void func(int *i, int *j);
+int factorial(int n);
 
 int main()
 {
@@ -61,19 +63,31 @@ int main()
     // printf("직위 : %s\n", data.jikwi);
     // printf("급여 : %d\n", data.pay);
 
-    int a = 3, b = 12;
-    func(a, b);
-    printf("%d, %d\n", a, b);
+    // int a = 3, b = 12;
+    // func(a, b);
+    // printf("%d, %d\n", a, b);
 
+    // int a = 3, b = 12;
+    // func(&a, &b);
+    // printf("%d, %d\n", a, b);
+
+    printf("%d", factorial(5));
 }
 
 // void func(i,j)
-int func(i, j)
+// int func(i, j)
 
-int i, j;
-{
-    i *= 3;
-    j /= 3;
-    printf("%d, %d\n", i, j);
-    return i;
+// int *i, *j;
+// {
+//     *i *= 3;
+//     *j /= 3;
+//     printf("%d, %d\n", *i, *j);
+//     // return i;
+// }
+
+int factorial(int n) {
+    if (n <= 1)
+        return 1;
+    else
+        return n * factorial(n-1);
 }
