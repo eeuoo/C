@@ -12,7 +12,11 @@ struct sawon data;
 // void func(int i, int j);
 // int func(int i, int j);
 // void func(int *i, int *j);
-int factorial(int n);
+// int factorial(int n);
+
+int add(int i, int j) {
+    return i + j;
+}
 
 int main()
 {
@@ -71,7 +75,13 @@ int main()
     // func(&a, &b);
     // printf("%d, %d\n", a, b);
 
-    printf("%d", factorial(5));
+    // printf("%d", factorial(5));
+
+    int i = 10, j = 5, result;
+    int (*pf)(int, int);
+    pf = add;
+    result = pf(i, j);
+    printf("%d", result);
 }
 
 // void func(i,j)
@@ -85,9 +95,9 @@ int main()
 //     // return i;
 // }
 
-int factorial(int n) {
-    if (n <= 1)
-        return 1;
-    else
-        return n * factorial(n-1);
-}
+// int factorial(int n) {
+//     if (n <= 1)
+//         return 1;
+//     else
+//         return n * factorial(n-1);
+// }
