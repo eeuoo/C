@@ -21,5 +21,5 @@ int main()
         
     } while(i < 100);
 
-    printf("%d", j)
+    printf("%d", j);
 }
