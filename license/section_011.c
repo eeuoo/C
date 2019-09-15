@@ -2,24 +2,43 @@
 
 int main()
 {   
-    int i, j, sw;
-    i = j = 0;
-    sw = 0;
-    do 
+    // int i, j, sw;
+    // i = j = 0;
+    // sw = 0;
+    // do 
+    // {
+    //     i++;
+    //     if (sw == 0)
+    //     {
+    //         j += i;
+    //         sw = 1;
+    //     }
+    //     else
+    //     {
+    //         j -= i;
+    //         sw = 0;
+    //     }
+        
+    // } while(i < 100);
+
+    int i = 0, j = 0;
+    while (1)
     {
         i++;
-        if (sw == 0)
+        j += i;
+        if(i >= 99)
         {
-            j += i;
-            sw = 1;
+            printf("%d", j);
+            break;
         }
         else
         {
+            i++;
             j -= i;
-            sw = 0;
         }
         
-    } while(i < 100);
+    }
+    
 
     printf("%d", j);
 }
