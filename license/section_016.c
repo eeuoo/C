@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
+/* 소수 판별 */
+
 int main()
 {
     // int a, i, j;
