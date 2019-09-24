@@ -62,5 +62,5 @@ int main()
     }
 
     for (x = 0; x <= 9; x++)
-        printf("%d", data[x]);
+        printf("%d ", data[x]);
 }
