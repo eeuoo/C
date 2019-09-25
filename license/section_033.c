@@ -64,4 +64,6 @@ int main()
         
     } while (i <= 19);
     
+    for (i = 0; i <= 19; i++)
+        printf("%d ", a[i]);
 }
