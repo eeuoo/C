@@ -41,6 +41,7 @@
 //         printf("%d ", data[x]);
 // }
 
+
 // int main()
 // {
 //     int n, i, j, k;
