@@ -3,9 +3,9 @@
 
 /* 병합 (Merge) */
 
-void BB(b, c);
-void CC(a, c);
-void DD(c);
+void BB(int b[10], int c[10]);
+void CC(int a[10], int c[10]);
+void DD(int c[10]);
 
 int i, j, k;
 
