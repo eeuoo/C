@@ -54,7 +54,7 @@ int main()
 
             if (i == -1 )break;
         }
-        else if (i ==  2)
+        else if (j ==  2)
         {
             i = Pop();
             
