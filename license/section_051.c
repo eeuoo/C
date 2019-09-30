@@ -35,9 +35,9 @@ int main()
         {
             keb = data.bon + data.su;
             butot += keb;
-            fprintf(ouf, "%s\t%s\t%d\t%d\n", data.bu, data.irum, data.bon, data.su, keb);
+            fprintf(ouf, "%s\t%s\t%d\t%d\t%d\n", data.bu, data.irum, data.bon, data.su, keb);
 
-            if (fscanf(inf, "%s %s %d %d", data.bon, data.irum, &data.bon, &data.su) == EOF)
+            if (fscanf(inf, "%s %s %d %d", data.bu, data.irum, &data.bon, &data.su) == EOF)
             {
                 gtot += butot;
                 fprintf(ouf, "부서 합계 : %d\n", butot);
@@ -53,6 +53,5 @@ int main()
         fprintf(ouf, "부서 합계 : %d\n", butot);
         
     }
-    
     
 }
