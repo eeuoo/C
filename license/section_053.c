@@ -21,5 +21,41 @@ int main()
 
     flag = 0;
     i = k = -1;
+
+    do {
+        k++;
+        scanf("%s %d %d", data[k].ban, &data[k].bunho, &data[k].wgt);
+    } while (data[k].bunho != 0);
     
+    printf("반\t번호\t체중\n");
+
+    while (i < k - 1)
+    {
+        i++;
+        
+        if (flag == 0)
+        {
+            flag = 1;
+            a = data[i].wgt;
+            b = data[i].wgt;
+        }
+        else if (a > data[i].wgt)
+            a = data[i].wgt;
+        
+        else if (b < data[i].wgt)
+            b = data[i].wgt;
+
+        if (strcmp(c, data[i].ban) == 0)
+        {
+            printf("   \t%d\t%d\n", data[i].bunho, data[i].bunho);
+            continue;
+        }
+
+        strcpy(c, data[i].ban);
+        printf("%s\t%d\t%d\n", data[i].ban, data[i].bunho, data[i].wgt);
+    }
+    
+    printf("최소 체중 : %d\n", a);
+    printf("최대 체중 : %d", b);
+
 }
