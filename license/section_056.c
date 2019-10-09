@@ -8,7 +8,7 @@ int main()
     int a[21];
 
     for (i = 0; i <= 20; i++)
-        a[i] = 0
+        a[i] = 0;
 
     scanf("%d %d", &x1, &x2);
 
