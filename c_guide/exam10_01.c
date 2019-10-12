@@ -12,7 +12,10 @@ int main()
     for (i = 0; i < 5; i++)
     {
         // malloc() 함수를 사용하여 각 배열 항목마다 10바이트의 메모리를 할당
-        buf[i] = 'A' + i;
+        buf[i] = (char *)malloc(sizeof(char) * 10);
+
+        // 각 항목의 첫 번째 값에 A를 저장한 후에 1씩 증가하여 저장. 즉 A, B, C, D, E를 저장
+        *buf[i] = 'A' + i;
 
         printf("buf[i]의 시작 주소 : %p\n", buf[i]);
         printf("buf[i]의 첫 번째 항목 :  %c\n", *buf[i]);
@@ -24,7 +27,7 @@ int main()
     for (i = 0; i < 5; i++)
     {
         free(buf[i]);
-        
+
         printf("buf[i]의 시작 주소 : %p\n", buf[i]);
         printf("buf[i]의 첫 번째 항목 :  %c\n", *buf[i]);
     }
