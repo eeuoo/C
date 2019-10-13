@@ -18,7 +18,7 @@ int main()
 
     buf -= 5;  // 포인터 buf를 처음 위치로 이동
 
-    print("memset() 함수 사용 \n");
+    printf("memset() 함수 사용 \n");
     memset(buf, '*', 5);
 
     for (i = 0; i < 5; i++) {
@@ -27,3 +27,5 @@ int main()
 
     buf -= 5;     // 포인터 buf를 처음 위치로 이동
     free(buf);    // buf에 할당되어 있는 메모리 해제 
+
+}
