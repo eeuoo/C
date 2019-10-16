@@ -7,7 +7,7 @@ int main()
     char buf[6] = "abcde\0";
     char *ptr = "abcde";
 
-    printf("array : %d , array : %s\n", strlen(array), array);
-    printf("buf : %d , buf : %s\n", strlen(buf), buf);
-    printf("ptr : %d , ptr : %s\n", strlen(ptr), ptr);
+    printf("array : %lu , array : %s\n", strlen(array), array);
+    printf("buf : %lu , buf : %s\n", strlen(buf), buf);
+    printf("ptr : %lu , ptr : %s\n", strlen(ptr), ptr);
 }
