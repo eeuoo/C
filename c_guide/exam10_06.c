@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <malloc.h>
+#include <stdlib.h>
 
 void StringCopy(char *, char *);
 
@@ -47,5 +47,5 @@ void StringCopy(char *dst, char *src)
 {
     while(*src)
         *dst++ = *src++;
-    *dst = "\0";
+    *dst = '\0';
 }
