@@ -25,7 +25,6 @@ void StringCopy(char *, char *);
 //     {
 //         *dst++ = *src++;
 //     }
-    
 // }
 
 int main()
