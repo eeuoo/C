@@ -9,14 +9,14 @@ int main()
     int i, size;
 
     printf(" 4 이상의 수를 입력하시오. ");
-    scanf("%d". &size);
+    scanf("%d", &size);
 
     printf("\n");
 
     // 사용자가 입력한 size 값으로 size X size 크기의 메모리를 할당
     buf = (char *)malloc(sizeof(char) * size * size);
 
-    i = 0
+    i = 0;
 
     // 제어변수 i가 size보다 작은 경우 25행부터 32행 실행
     while (i < size)
