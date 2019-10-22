@@ -24,7 +24,8 @@ int put(int k)
     }
 
     Queue[Rear] = k;
-    Rear = ++Rear % MAX;
+    int h = ++Rear % MAX;
+    Rear = h;
 
     return k;
 }
@@ -40,7 +41,8 @@ int get(void)
     }
 
     i = Queue[Front];
-    Front = ++Front % MAX;
+    int g = ++Front % MAX;
+    Front = g;
 
     return 1;
 }
@@ -50,13 +52,13 @@ void print_queue(void)
     int i;
     printf("\n Queue Contents : Front ----> Rear \n");
 
-    for (i = Front; i != Rear; i = ++i % MAX)
+    for (i = Front; i != Rear; ++i, i = i % MAX)
     {
         printf(" %-6d", Queue[i]);
     }
 }
 
-void main(void)
+int main(void)
 {
     int i;
     init_queue();
