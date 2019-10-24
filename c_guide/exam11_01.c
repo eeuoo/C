@@ -4,7 +4,7 @@
 
 enum Week {Sun, Mon, Tue, Wed, Thu, Fri, Sat};
 
-void main(void)
+int main(void)
 {
     enum Week day;
     int MonthOfFirst;
