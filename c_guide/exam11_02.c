@@ -14,7 +14,7 @@ int main()
 {
     struct grade class_grade_1;
     
-    strcpy(class_grade_1, Name, "유재숙");
+    strcpy(class_grade_1.Name, "유재숙");
     class_grade_1.num = 15;
     class_grade_1.Korean = 90;
     class_grade_1.English = 100;
