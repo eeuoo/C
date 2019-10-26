@@ -12,7 +12,7 @@ typedef struct __grade
 int main()
 {
     grade class_grade_1[3];
-    char buf[20];
+    // char buf[20];
     int i, aver = 0;
 
     printf("1학년의 성적 관리 프로그램입니다.\n");
@@ -23,7 +23,7 @@ int main()
         printf("학번을 입력하세요 : ");
         scanf("%d", &class_grade_1[i].num);
         printf("국어 성적을 입력하세요 : ");
-        scanf("%d", %class_grade_1[i].Korean);
+        scanf("%d", &class_grade_1[i].Korean);
         printf("\n");
     }
 
@@ -31,7 +31,7 @@ int main()
     printf("학번\t\t이름\t\t국어 성적\n");
 
     for (i = 0; i < 3; i++) {
-        printf("[%d]번\t\t[%s]\t", class_grade_1[i].num, class_grade_1[i].Name);
+        printf("[%d]번\t\t[%s]\t\t", class_grade_1[i].num, class_grade_1[i].Name);
         printf("%d\n", class_grade_1[i].Korean);
         aver += class_grade_1[i].Korean;
     }
