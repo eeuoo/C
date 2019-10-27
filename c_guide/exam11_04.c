@@ -13,7 +13,7 @@ int Total;
 int main()
 {
     grade class_grade_1[3];
-    char buf[20];
+    // char buf[20];
     int i;
     Total  = 0;
 
@@ -43,6 +43,6 @@ void ShowTable(grade tbl)
 {
     printf(" [%d]번\t\t[%s]\t", tbl.num, tbl.Name);
     printf(" %d\n", tbl.korean);
-    Total += tbl.Korean;
+    Total += tbl.korean;
 }
 
