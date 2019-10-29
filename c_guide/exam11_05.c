@@ -24,5 +24,11 @@ int main()
         scanf("%s", buf);
         strcpy(class_grade_1[i].Name, buf);
         printf("학번을 입력하세요 : ");
+        scanf("%d", &class_grade_1[i].num);
+        printf("국어 성적을 입력하세요 : ");
+        scanf("%d", %class_grade_1[i].Korean);
+        printf("\n");
     }
+
+    printf("\n=========================================\n");
 }
