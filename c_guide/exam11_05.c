@@ -7,7 +7,7 @@ typedef struct __grade {
     int Korean;
 } grade;
 
-void StowTable(grade *);
+void ShowTable(grade *);
 int Total;
 
 int main()
@@ -26,7 +26,7 @@ int main()
         printf("학번을 입력하세요 : ");
         scanf("%d", &class_grade_1[i].num);
         printf("국어 성적을 입력하세요 : ");
-        scanf("%d", %class_grade_1[i].Korean);
+        scanf("%d", &class_grade_1[i].Korean);
         printf("\n");
     }
 
@@ -42,7 +42,7 @@ int main()
 
 void ShowTable(grade *ptr)
 {
-    printf(" [%d]번\t\t[%s]\t\t", prt->num, ptr->Name);
+    printf(" [%d]번\t\t[%s]\t\t", ptr->num, ptr->Name);
     printf(" %d\n", ptr->Korean);
-    Total += prt->Korean;
+    Total += ptr->Korean;
 }
