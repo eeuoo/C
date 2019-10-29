@@ -31,4 +31,18 @@ int main()
     }
 
     printf("\n=========================================\n");
+    printf("학번\t\t이름\t\t국어 성적\n");
+
+    for (i = 0; i < 3; i++) 
+        ShowTable(&class_grade_1[i]);
+
+    printf("\n=========================================\n");
+    printf("평균\t%d\n", Total / 3);
+}
+
+void ShowTable(grade *ptr)
+{
+    printf(" [%d]번\t\t[%s]\t\t", prt->num, ptr->Name);
+    printf(" %d\n", ptr->Korean);
+    Total += prt->Korean;
 }
