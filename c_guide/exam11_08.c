@@ -22,7 +22,7 @@ int main()
     printf("0부터 255까지의 값을 입력해 보세요.\n");
     printf("입력한 10진수 값을 2진수로 바꾸어서 출력합니다.\n");
     printf("[10진수] : ");
-    scanf("%d", &data.byte);
+    scanf("%s", &data.byte);
 
     printf("입력한 10진수 값을 2진수로 변경하면 다음과 같습니다.\n");
     printf("%d", data.bit.B7);
