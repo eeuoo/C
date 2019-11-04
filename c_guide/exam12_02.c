@@ -5,7 +5,7 @@ int main(void)
     FILE *fp;
     int i;
 
-    if (fp = fopen("ascii.txt", "w") == NULL) {
+    if ( (fp = fopen("ascii.txt", "w")) == NULL) {
         printf("새로운 파일을 생성할 수 없습니다.");
         return -1;
     }
