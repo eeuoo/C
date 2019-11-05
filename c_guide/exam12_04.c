@@ -22,7 +22,6 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-
     while (!feof(fin))
     {
         fgets(buf, 80, fin);
