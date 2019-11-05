@@ -30,5 +30,8 @@ int main(int argc, char *argv[])
         fputs(buf, fout);
     }
 
-    
+    fclose(fin);
+    fclose(fout);
+
+    return 0;
 }
