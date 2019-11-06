@@ -16,7 +16,7 @@ void OutputUserData(void);
 
 int main(int argc, char *argv[])
 {
-    if (argv < 2) {
+    if (argc < 2) {
         printf("다음 형식으로 입력하세요! : exam12_05 옵션 \n");
         printf("옵션 /r : 학점 파일 읽어오기 \n");
         printf("옵션 /w : 학점 파일 작성하기 \n");
@@ -41,7 +41,7 @@ int DoReadAction(void)
 {
     FILE *fin;
 
-    if ((fin = fopen("grade.dat", "rb")) === NULL) {
+    if ((fin = fopen("grade.dat", "rb")) == NULL) {
         printf("파일을 열 수 없습니다.");
         return -1;
     }
@@ -91,7 +91,7 @@ void InputUserData(void)
         printf("[학번] : ");
         scanf("%d", &Data[i].num);
         printf("[이름] : ");
-        scanf("%s", &Data[i].Name);
+        scanf("%s", Data[i].Name);
         printf("[학점] : ");
         scanf("%d", &Data[i].grade);
         printf("-----------------\n");
@@ -106,7 +106,7 @@ void OutputUserData(void)
 
     for (i = 0; i < 3; i++) {
         printf("[학번] : %d\n", Data[i].num);
-        printf("[학생이름] : %d\n", Data[i].Name);
+        printf("[학생이름] : %s\n", Data[i].Name);
         printf("[학점] : %d\n", Data[i].grade);
         printf("-----------------\n");
     }
