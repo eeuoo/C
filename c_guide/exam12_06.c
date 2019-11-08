@@ -2,6 +2,7 @@
 #include <string.h>
 
 typedef struct _grade {
+    char Name[10];
     int num;
     int grade;
 } grade;
