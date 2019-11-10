@@ -2,7 +2,7 @@
 
 #define DEBUF  // DEBUG를 #define 문으로 정의
 
-vodi main(void)
+int main(void)
 {
     printf("전처리문에 대해 알아보기.\n");
     #ifdef DEBUG
